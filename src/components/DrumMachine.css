@@ -1,0 +1,83 @@
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #282c34;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad:active,
+.drum-pad:hover {
+  background-color: #666;
+}
+
+.drum-pad:active {
+  transform: scale(0.95);
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #666;
+}
+
+.controls input[type="range"] {
+  width: 200px;
+}
